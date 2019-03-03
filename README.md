@@ -2,17 +2,54 @@
 
 > vue default image component
 
-## Build Setup
+### Development
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
+```shell
 npm run dev
+```
 
-# build for production with minification
+development workspace: `./demo`
+
+### Build
+
+```shell
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Usage
+
+```shell
+npm install https://github.com/Blacate/vue-default-image.git
+```
+
+
+
+```vue
+<template>
+	<div class="main">
+		<vue-default-image src="https://www.baidu.com/logo.png" />
+	</div>
+</template>
+
+<script>
+import { VueDefaultImage } from 'vue-default-image'
+    
+export default {
+    components: {
+        VueDefaultImage,
+    }
+}
+</script>
+```
+
+or
+
+```javascript
+import Vue from 'vue'
+import VueDefaultImage from 'vue-default-image'
+
+Vue.use(VueDefaultImage)
+
+// ....
+```
+
